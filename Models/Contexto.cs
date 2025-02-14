@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SGE.Models;
 
 namespace SGE.Models
 {
@@ -10,10 +11,10 @@ namespace SGE.Models
         }
 
         public DbSet<Professores> Professores { get; set; }
-        public DbSet<Professores> Alunos { get; set; }
-        public DbSet<Professores> Materias { get; set; }
-        public DbSet<Professores> Etapas { get; set; }
-        public DbSet<Professores> Notas { get; set; }
+        public DbSet<Alunos> Alunos { get; set; }
+        public DbSet<Materias> Materias { get; set; }
+        public DbSet<Etapas> Etapas { get; set; }
+        public DbSet<Notas> Notas { get; set; }
 
     }
 }
